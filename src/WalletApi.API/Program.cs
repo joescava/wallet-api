@@ -8,10 +8,17 @@ builder.Services.AddControllers();
 
 // Swagger y documentación
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new() { Title = "WalletApi.API", Version = "v1" });
+    c.UseInlineDefinitionsForEnums();
+});
 
 // Inyección de dependencias (Infraestructura)
-builder.Services.AddInfrastructure(builder.Configuration);
+if (!builder.Environment.IsEnvironment("IntegrationTest"))
+{
+    builder.Services.AddInfrastructure(builder.Configuration, builder.Environment);
+}
 
 var app = builder.Build();
 
@@ -29,3 +36,5 @@ app.UseMiddleware<ErrorHandlingMiddleware>();
 app.MapControllers();
 
 app.Run();
+
+public partial class Program { }
