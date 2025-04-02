@@ -3,12 +3,13 @@
 🧠 Descripción General
 
 API REST construida en .NET 8 usando el patrón Clean Architecture para gestionar billeteras y transacciones de saldo. La solución permite:
-	•	CRUD sobre billeteras
-	•	Registro y consulta de transacciones
-	•	Validaciones de negocio
-	•	Manejo centralizado de errores
-	•	Inyección de dependencias estructurada
-	•	Pruebas unitarias y de integración
+	- CRUD de billeteras
+	- Registro y consulta de transacciones
+	- Validaciones de negocio
+	- Manejo centralizado de errores
+	- JWT authentication
+	- Inyección de dependencias
+	- Pruebas unitarias e integración
 
 🏗️ Arquitectura del Proyecto
 
@@ -49,17 +50,44 @@ wallet-api/
         dotnet run --project src/WalletApi.API
 
     5.	La API estará disponible en:
-        http://localhost:5000
+        hhttp://localhost:5162/swagger
 
-📑 Endpoints (Resumen)
-	•	POST /wallet
+Autenticación JWT
+
+Para proteger endpoints sensibles se implementó autenticación con JWT.
+	•	Login:
+		POST /api/auth/login
+	
+		Body:
+		{
+			"username": "admin",
+			"password": "123456"
+		}
+
+	•	Copiar el token de respuesta
+	•	En Swagger, hacer click en “Authorize”
+	•	Pegar: Bearer <token>
+
+📑 Endpoints 
+	Wallets
+	•	POST /wallet (Protegido)
 	•	GET /wallet/{id}
-	•	PUT /wallet/{id}
-	•	DELETE /wallet/{id}
-	•	POST /transaction
+	•	PUT /wallet/{id} (Protegido)
+	•	DELETE /wallet/{id} (Protegido)
+
+	Transactions
+	•	POST /transaction (Protegido)
 	•	GET /transaction/wallet/{walletId}
 
-Swagger puede activarse si deseas visualizar los endpoints fácilmente.
+
+Pruebas
+dotnet test test/WalletApi.UnitTest
+dotnet test test/WalletApi.IntegrationTest
+
+Limpieza del proyecto
+	Desde la raíz (wallet-api/):
+		dotnet clean
+		dotnet build
 
 ## Preguntas Clave
 
