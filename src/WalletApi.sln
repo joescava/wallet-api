@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletApi.Domain", "WalletA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletApi.Infrastructure", "WalletApi.Infrastructure\WalletApi.Infrastructure.csproj", "{EAC369B0-7DF7-4FB6-ADC4-E6E0716390DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletApi.IntegrationTest", "..\test\WalletApi.IntegrationTest\WalletApi.IntegrationTest.csproj", "{91133906-AAD1-4438-B77D-3F509291948A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{EAC369B0-7DF7-4FB6-ADC4-E6E0716390DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAC369B0-7DF7-4FB6-ADC4-E6E0716390DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAC369B0-7DF7-4FB6-ADC4-E6E0716390DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91133906-AAD1-4438-B77D-3F509291948A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91133906-AAD1-4438-B77D-3F509291948A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91133906-AAD1-4438-B77D-3F509291948A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91133906-AAD1-4438-B77D-3F509291948A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
