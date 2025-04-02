@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletApi.API", "WalletApi.API\WalletApi.API.csproj", "{ACA66E54-8718-4499-A67C-659531E2BEE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletApi.Application", "WalletApi.Application\WalletApi.Application.csproj", "{1AEEB6A9-29CC-4E1A-B11C-05F98D45242C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletApi.Domain", "WalletApi.Domain\WalletApi.Domain.csproj", "{8705DE1F-0309-4405-B766-6CF403BCEE4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletApi.Infrastructure", "WalletApi.Infrastructure\WalletApi.Infrastructure.csproj", "{EAC369B0-7DF7-4FB6-ADC4-E6E0716390DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACA66E54-8718-4499-A67C-659531E2BEE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACA66E54-8718-4499-A67C-659531E2BEE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACA66E54-8718-4499-A67C-659531E2BEE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACA66E54-8718-4499-A67C-659531E2BEE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AEEB6A9-29CC-4E1A-B11C-05F98D45242C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AEEB6A9-29CC-4E1A-B11C-05F98D45242C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AEEB6A9-29CC-4E1A-B11C-05F98D45242C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AEEB6A9-29CC-4E1A-B11C-05F98D45242C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8705DE1F-0309-4405-B766-6CF403BCEE4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8705DE1F-0309-4405-B766-6CF403BCEE4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8705DE1F-0309-4405-B766-6CF403BCEE4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8705DE1F-0309-4405-B766-6CF403BCEE4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAC369B0-7DF7-4FB6-ADC4-E6E0716390DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC369B0-7DF7-4FB6-ADC4-E6E0716390DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC369B0-7DF7-4FB6-ADC4-E6E0716390DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC369B0-7DF7-4FB6-ADC4-E6E0716390DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
