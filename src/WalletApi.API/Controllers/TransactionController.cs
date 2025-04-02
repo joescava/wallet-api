@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using WalletApi.Application.DTOs;
 using WalletApi.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WalletApi.API.Controllers;
 
+[Authorize] 
 [ApiController]
 [Route("api/[controller]")]
 public class TransactionController : ControllerBase
@@ -22,6 +24,7 @@ public class TransactionController : ControllerBase
         return Ok();
     }
 
+    [AllowAnonymous]
     [HttpGet("wallet/{walletId}")]
     public async Task<IActionResult> GetByWalletId(int walletId)
     {
