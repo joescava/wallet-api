@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WalletApi.Application\WalletApi.Application.csproj" />
+    <ProjectReference Include="..\WalletApi.Domain\WalletApi.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -11,6 +12,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.3" />
   </ItemGroup>
 
   <PropertyGroup>
