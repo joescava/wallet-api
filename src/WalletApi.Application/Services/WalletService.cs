@@ -2,7 +2,6 @@ using WalletApi.Application.DTOs;
 using WalletApi.Application.Exceptions;
 using WalletApi.Application.Interfaces;
 using WalletApi.Domain.Entities;
-using WalletApi.Application.Interfaces;
 
 namespace WalletApi.Application.Services;
 
