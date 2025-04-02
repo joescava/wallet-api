@@ -2,8 +2,10 @@ using WalletApi.Application.DTOs;
 using WalletApi.Application.Exceptions;
 using WalletApi.Application.Interfaces;
 using WalletApi.Domain.Entities;
+using WalletApi.Application.Interfaces;
+using WalletApi.Infrastructure.Services;
 
-namespace WalletApi.Application.Services;
+namespace WalletApi.Infrastructure.Services;
 
 public class WalletService : IWalletService
 {

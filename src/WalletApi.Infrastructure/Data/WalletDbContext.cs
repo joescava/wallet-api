@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using WalletApi.Domain.Entities;
 
 namespace WalletApi.Infrastructure.Data

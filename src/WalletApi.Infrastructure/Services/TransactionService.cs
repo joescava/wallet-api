@@ -2,8 +2,10 @@ using WalletApi.Application.DTOs;
 using WalletApi.Application.Exceptions;
 using WalletApi.Application.Interfaces;
 using WalletApi.Domain.Entities;
+using WalletApi.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
-namespace WalletApi.Application.Services;
+namespace WalletApi.Infrastructure.Services;
 
 public class TransactionService : ITransactionService
 {

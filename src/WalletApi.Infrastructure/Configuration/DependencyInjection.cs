@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using WalletApi.Application.Interfaces;
 using WalletApi.Infrastructure.Data;
+using WalletApi.Infrastructure.Services;
 
 namespace WalletApi.Infrastructure.Configuration
 {
@@ -17,7 +18,7 @@ namespace WalletApi.Infrastructure.Configuration
             // Repositorios
             services.AddScoped<IWalletRepository, WalletRepository>();
             services.AddScoped<ITransactionService, TransactionService>();
-
+            services.AddScoped<IWalletService, WalletService>();
             return services;
         }
     }
