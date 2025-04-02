@@ -7,4 +7,6 @@ public class WalletApi{
     public decimal Balance {get; set; }
     public DateTime CreatedAt {get; set; }
     public DateTime UpdateAt {get; set; }
+
+    public ICollection<TransactionHistory> Transactions {get; set; } = new List<TransactionHistory>();
 }
