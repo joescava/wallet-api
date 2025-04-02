@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using WalletApi.Application.DTOs;
 using WalletApi.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WalletApi.API.Controllers;
 
+[Authorize] 
 [ApiController]
 [Route("api/[controller]")]
 public class WalletController : ControllerBase
